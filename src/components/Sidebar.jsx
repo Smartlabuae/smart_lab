@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link} from "react-router-dom";
 import "../styles/sidebar.css";
 import { categories } from "../components/pages/categoryData.js";
 
 const Sidebar = () => {
-  const location = useLocation();
   const [activeCategory, setActiveCategory] = useState(null);
 
   const handleCategoryClick = (categoryId) => {

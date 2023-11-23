@@ -4,7 +4,6 @@ import ContactPageImg from "../../images/contact.jpg"
 import Aos from 'aos';
 import Footer from '../Footer';
 import Navbar from '../Navbar';
-import GoogleMap from '../pages/map';
 
 const ContactPage = () => {
         
@@ -67,10 +66,6 @@ const ContactPage = () => {
       </div>
 
 
-      {/* <div className='map'>
-      <GoogleMap />
-
-    </div> */}
     </div>
     <Footer/>      
     </div>

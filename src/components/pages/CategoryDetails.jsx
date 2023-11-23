@@ -32,24 +32,24 @@ const CategoryDetails = () => {
     const selectedCategory = categories.find(
       (category) =>
         category.id === parseInt(id) || category.cid === parseInt(cid) ||
-        category.subcategory &&
-        category.subcategory.some((sub) => sub.subid === parseInt(id)) ||
-        category.subcategory2 &&
-        category.subcategory2.some((sub) => sub.subid === parseInt(id)) ||
-        category.subcategory3 &&
-        category.subcategory3.some((sub) => sub.subid === parseInt(id))||
-        category.subcategory4 &&
-        category.subcategory4.some((sub) => sub.subid === parseInt(id))||
-        category.subcategory5 &&
-        category.subcategory5.some((sub) => sub.subid === parseInt(id))||
-        category.subcategory6 &&
-        category.subcategory6.some((sub) => sub.subid === parseInt(id))
+        (category.subcategory &&
+        category.subcategory.some((sub) => sub.subid === parseInt(id)) )||
+        (category.subcategory2 &&
+        category.subcategory2.some((sub) => sub.subid === parseInt(id))) ||
+        (category.subcategory3 &&
+        category.subcategory3.some((sub) => sub.subid === parseInt(id)))||
+        (category.subcategory4 &&
+        category.subcategory4.some((sub) => sub.subid === parseInt(id)))||
+        (category.subcategory5 &&
+        category.subcategory5.some((sub) => sub.subid === parseInt(id)))||
+        (category.subcategory6 &&
+        category.subcategory6.some((sub) => sub.subid === parseInt(id)))
     );
     setCategoryDetails(selectedCategory);
 
 
     
-  }, [categories, id, cid]);
+  }, [ id, cid]);
 
 
   if (!categoryDetails) {

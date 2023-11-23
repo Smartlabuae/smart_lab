@@ -2,86 +2,28 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import { categories } from './categoryData';
 import "../../styles/pages/moredetails.css";
-import Navbar from '../Navbar';
-import Footer from '../Footer';
-import Sidebar from '../Sidebar';
-import { Link } from 'react-router-dom';
-import { Drawer, Box, ListItem, List } from "@mui/material";
-import { RxCross1 } from "react-icons/rx";
 
 
 const MoreDetails = () => {
-  const { id, cid } = useParams();
+  const { id,} = useParams();
   const [moreDetails, setMoreDetails] = useState(null);
-  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
-  const [open, setOpen] = useState(false);
-
-  const handleOpen = () => {
-    setOpen(true);
-  };
-  const handleClose = () => {
-    setOpen(false);
-  };
-
-  const list = () => (
-    <Box style={{ width: 300, height:'50%' }}>
-      <List>
-        <ListItem className="list-items">
-          <button className="close-button btn " onClick={handleClose}>
-            <RxCross1 />
-          </button>
-
-          <div className="sidebar-drawer mt-5">
-          <ul>
-        {categories.map((category) => (
-          <li key={category.cid}>
-            <Link to={`/categorypage/${category.cid}`}>
-              {category.name}
-            </Link>
-
-            {Object.keys(category).map((key) => {
-              // Check if the key is a subcategory array
-              if (key.startsWith("subcategory")) {
-                return (
-                  <ul className="sub" key={key}>
-                    {category[key].map((subcategory) => (
-                      <li key={subcategory.subid}>
-                        <Link to={`/moredetails/${subcategory.subid}`}>
-                          - {subcategory.title}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                );
-              }
-              return null;
-            })}
-          </li>
-        ))}
-      </ul>
-          </div>
-        </ListItem>
-      </List>
-    </Box>
-  );
-
 
 
   useEffect(() => {
     const selectedCategory = categories.find(
       (category) =>
-        category.subcategory &&
-        category.subcategory.some((sub) => sub.subid === parseInt(id)) ||
-        category.subcategory2 &&
-        category.subcategory2.some((sub) => sub.subid === parseInt(id)) ||
-        category.subcategory3 &&
-        category.subcategory3.some((sub) => sub.subid === parseInt(id)) ||
-        category.subcategory4 &&
-        category.subcategory4.some((sub) => sub.subid === parseInt(id)) ||
-        category.subcategory5 &&
-        category.subcategory5.some((sub) => sub.subid === parseInt(id)) ||
-        category.subcategory6 &&
-        category.subcategory6.some((sub) => sub.subid === parseInt(id)) 
+        (category.subcategory &&
+        category.subcategory.some((sub) => sub.subid === parseInt(id))) ||
+        (category.subcategory2 &&
+        category.subcategory2.some((sub) => sub.subid === parseInt(id))) ||
+        (category.subcategory3 &&
+        category.subcategory3.some((sub) => sub.subid === parseInt(id))) ||
+        (category.subcategory4 &&
+        category.subcategory4.some((sub) => sub.subid === parseInt(id))) ||
+       (category.subcategory5 &&
+        category.subcategory5.some((sub) => sub.subid === parseInt(id))) ||
+        (category.subcategory6 &&
+        category.subcategory6.some((sub) => sub.subid === parseInt(id)) )
     );
     setMoreDetails(selectedCategory);
   }, [id]);
