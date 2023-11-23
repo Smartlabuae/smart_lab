@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../../src/styles/Tahoma-4styles-Font/Tahoma\ Regular\ font.ttf') format('truetype');
+    /* You can specify additional properties like font-weight and font-style if needed */
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+.home{
+    background:url(../images/BG\ 1.png);
+    height: auto;
+
+    font-family: 'CustomFont', sans-serif;
+}
+
+.slider-container{
+   
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    justify-content:center;
+    overflow: hidden;
+    position:relative;
+    width: 100%;
+    height:100vh;
+
+}
+.slider-container h1{
+    position:absolute;
+    color:white;
+    font-size: 80px;
+    font-weight: 700;
+    width: 60%;
+    justify-content: center;
+    text-align: center;
+    z-index:100;
+    left: 0%;
+    top: 30%;
+    background-color: rgba(0, 0, 0, 0.366);
+}
+
+.slider-container .btn{
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-size: 20px;
+    width: 300px;
+    left: 20%;
+    z-index:100;
+    top: 50%;
+    background-color: rgba(202, 192, 192, 0.538);
+   
+}
+.slider-container::after{
+    background-color: black;
+    content: '';
+    position: absolute;
+    opacity: 0.3;
+    top:0;
+    left:0;
+    height: 100%;
+    width:100%;
+    z-index: 1;
+}
+.slide{
+    background-repeat: no-repeat;
+    background-position:center;
+    position: absolute;
+    top:0;
+    left:0;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    transform: scale(1);
+    transition:  opacity 0.6s ease, transform 1s ease;
+}
+.slide-img{
+    object-fit: cover;
+   width: 100%;
+   height: 100%;
+}
+.slide.active{
+    animation: grow 4s linear forwards;
+    opacity: 1;  
+}
+.first-slide button{
+    display: none!important;
+    
+}
+@keyframes grow{
+    0% ,20%{
+        transform: scale(1);
+    }
+    75% ,100%{
+        transform: scale(1.15);
+    }
+}
+
+
+
+/* Define the animation for sliding in from right to left */
+@keyframes slideFromRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Apply the animation to the slide-text element */
+  .slide-text {
+    animation: slideFromRight 1s ease-in-out forwards; /* You can adjust the animation duration as needed */
+    opacity: 0; /* Initially hide the text */
+  }
+  
+  /* Add a class for the active slide text */
+  .slide-text.active {
+    animation: none; /* Remove animation for the active slide */
+    opacity: 1;
+  }
+  
+
+
+
+.controls-container{
+    color: white;
+    position:absolute;
+    top:60%;
+    right:8%;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+.controls-container .btn{
+    width: 80px;
+    height: 60px;
+    margin-top: 10px;
+
+}
+.brochure-btn{
+    color: white;
+    position:absolute;
+    top:85%;
+    right:8%;
+    display: flex;
+    flex-direction: column;
+    z-index:1;
+}
+.brochure-btn .btn{
+    width: 200px;
+    height: 50px;
+   
+}
+@media screen and (max-width:768px) {
+    .slider-container h1{
+        left: 0%;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        font-size: 60px;
+        text-align: center;
+    }
+    .controls-container{
+
+        position:absolute;
+        top:79%;
+        left: auto;
+        right:auto ;
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        z-index: 100;
+        width:100%
+    }
+    .controls-container .btn{
+
+        margin-top:0;
+        margin-left:10px ;
+    
+    }
+
+    .brochure-btn {
+        color: white;
+        position:absolute;
+        top:90%;
+        left: 0%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index:1;
+        width: 100%;
+    }
+
+
+    
+
+    
+}

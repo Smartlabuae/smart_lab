@@ -1,0 +1,93 @@
+.footer_wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	position: relative;
+	/* bottom: -200px; */
+    background-color: white;
+
+}
+
+.footer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-inline: 5rem;
+	padding-block: 1.5rem;
+	text-align: left;
+	position: relative;
+	z-index: 1;
+}
+
+.footer::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: url(../images/lab/08.webp);
+	background-size: cover;
+	opacity: 0.1;
+	z-index: -1;
+}
+
+.mt {
+	margin-block-start: 3rem;
+}
+.contacts {
+	text-align: start;
+}
+
+.pages a {
+	text-decoration: none;
+	color: var(--primary);
+	font-weight: 500;
+}
+.copyrights {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	gap: 0.1em;
+	color: black;
+}
+.copyrights a {
+	text-decoration: none;
+	color: var(--primary);
+	font-size: 12px;
+}
+.copyrights p{
+	font-size: 12px;
+}
+.pages p {
+	margin-bottom: 10px!important;
+}
+@media (width <= 50em) {
+	.footer {
+		display: flex;
+		flex-direction: column;
+		padding-inline: 2rem;
+
+	}
+
+	.mt {
+		margin-block-start: 0.5rem;
+		
+	}
+    
+.footer_wrapper h3{
+    width: 100%;
+}
+.copyrights{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.info p{
+	margin-bottom:10px!important ;
+}
+
+
+}

@@ -1,0 +1,33 @@
+/* .brandslider{
+    overflow-y: hidden;
+}
+.slider{
+    width: 98%!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.brandslick-heading{
+    
+    margin-left: 5%;
+    width:90%;
+    z-index: 100;
+  }
+  .brandslick-heading h2{
+    font-weight: 800;
+  }
+.brands-box{
+    width: 150px!important;
+    height: 150px!important;
+}
+.brands-box img{
+    object-fit: contain;
+    width: 150px!important;
+    height: 150px!important;
+}
+
+.slider button{
+    display: none!important;
+} */

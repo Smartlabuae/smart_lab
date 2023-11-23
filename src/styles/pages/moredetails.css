@@ -1,0 +1,280 @@
+.moredetails{
+/* background-image: url(../../images/BG\ 1.png); */
+
+}
+.category-details-content{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.moredetails hr{
+    width: 50%;
+  
+}
+.moredetails-img img{
+    object-fit:cover;
+    width: 100%;
+    height: 300px;
+    filter: brightness(50%);
+}
+.series-img{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   gap: 2rem; 
+
+
+
+}
+.series-img img{
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+    border-radius:15px ;
+
+
+}
+.series-toilet-img{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.series-toilet-img img{
+    width:800px;
+    height: 400px;
+    object-fit: cover;
+    border-radius:15px ;
+
+
+}
+.moredetails-heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.moredetails-heading h2{
+    font-size:30px ;
+    font-weight: 600;
+    text-align: center;
+}
+
+.moredetails-all{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-inline-start: 7%;
+    margin-block-start: 0%;
+    margin-block-end:200px;   
+}
+.moredetails-all p {
+    margin-bottom: 10px!important;
+}
+
+.moredetails-desc{
+    margin-block-start: 50px;
+    color:black ;
+    width: 100%;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.moredetails-desc p{
+    width: 80%;
+
+
+}
+.underline-text {
+    text-decoration: underline;
+ font-weight: 600;
+
+  }
+    
+
+.moredetails-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+    
+}
+.moredetails-list p{
+    color: black;
+    width: 80%;
+    font-size: 20px;
+}
+.eyewash-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 6rem;
+}
+.eyewash-container h4{
+width: 50%;
+    
+}
+.eyewash{
+    width: 400px;
+    height: 600px;
+    object-fit: contain;
+}
+.worktops {
+    display: flex;
+    justify-content: center;
+}
+
+.worktops img{
+    width: 750px;
+    height: auto;
+    border-radius:15px ;
+
+}
+.fumehood{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fumehood img{
+    width: 40%;
+    border-radius:15px ;
+
+}
+.fumehoodh{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fumehoodh img{
+    width: 50%;
+    border-radius:15px ;
+
+}
+
+.bio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.bio img{
+    width: 80%;
+    border-radius:15px ;
+
+}
+.laminar{
+    margin-inline-start: 10%;
+}
+.laminar p{
+    color: black;
+    font: 20px;
+}
+
+@media screen and  (max-width:991px){
+    .moredetails-all{
+        width: 100%;
+    margin-inline-start: 0%;
+
+
+
+       
+    }
+}
+@media screen and (max-width:768px)  {
+
+    .moredetails-heading h2{
+        font-size:22px ;
+        font-weight: 600;
+        text-align: center;
+    }
+    .moredetails-desc p {
+        width: 90%;
+    }
+
+    .moredetails-desc{
+        margin-block-start: 20px;
+        color:black ;
+        width: 100%;
+        font-size: 16px;
+    }
+    .moredetails-list{
+        display: flex;
+        flex-direction: column ;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .moredetails-list p{
+        color: black;
+        width: 90%;
+        margin-inline-start: 0%;
+        font-size: 16px;
+        
+    }
+    .series-img img{
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        
+    
+    }
+
+    .series-toilet-img img{
+        width:300px;
+        height: 300px;
+        object-fit: cover;
+        
+        
+    
+    }
+
+    .eyewash-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+        padding-inline: 0rem;
+    }
+    .eyewash-container h4{
+        text-align: center;
+        width: 100%;
+        font-size: 18px;
+        margin-block-start: 30px;
+        
+    }
+    .eyewash{
+        width: 300px;
+        height: 400px;
+        object-fit: contain;
+    }
+    .worktops img{
+        width: 300px;
+    } 
+    .fumehood{
+        display: flex;
+        flex-direction: column;
+    }
+    .fumehood img{
+        width: 300px;
+    } 
+    .fumehoodh img{
+        width: 300px;
+    } 
+    .moredetails-all{
+  
+        width: 100%;
+
+    }   
+    .laminar{
+        margin-inline-start: 5%;
+    }
+}

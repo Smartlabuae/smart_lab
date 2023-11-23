@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../src/styles/Tahoma-4styles-Font/TAHOMA_0.TTF') format('truetype');
+    /* You can specify additional properties like font-weight and font-style if needed */
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
+.App{
+    background-color: rgb(255, 255, 255);
+    color:rgb(2,68,142);
+    font-family: 'CustomFont';
+}

@@ -1,0 +1,72 @@
+.client-heading{
+  position:absolute;
+  top:10%;
+  left: 5%;
+  width: 500px;
+  z-index: 100;
+}
+.client-heading h2{
+  font-weight: 800;
+}
+.about-img {
+  position: relative;
+  overflow-x: hidden;
+  width: 100%;
+
+
+  
+  
+  /* flex-wrap: wrap; */
+}
+.color-overlay {
+  height: 300px;
+
+}
+
+
+
+
+.scrolling-text {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  white-space: nowrap;
+  font-size: 100px;
+  display: flex;
+  justify-content:space-between;
+  overflow: hidden !important;
+  gap: 0;
+}
+.scrolling-text:hover .scrolling-img {
+  animation-play-state:paused ;
+
+
+}
+.scrolling-img{
+  display: inline-block;
+  animation: scrollslide 20s linear infinite; 
+
+}
+
+.scrolling-img img {
+  width: 180px;
+  height: 100px;
+  margin-left:80px;
+  object-fit: contain;
+}
+
+
+@keyframes scrollslide {
+  from {
+    transform: translateX(0%); /* Start off-screen to the right */
+  }
+  to {
+    transform: translateX(-100%); /* End off-screen to the left */
+  }
+}
+
+@media screen and (max-width:768px){
+  .scrolling-text{
+    width: 520%;
+  }
+}

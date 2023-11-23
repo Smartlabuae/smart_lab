@@ -1,0 +1,110 @@
+.sidebar-dropdown-menu {
+    position:absolute;
+    top: 20%;
+    right: 10%;
+    /* margin-inline-start:80%;
+    margin-block-start: 2%; */
+    background-color:#ffffff00;
+    padding-inline-end: 1.5rem;
+    z-index: 10;
+    width: 350px;
+    height:1130px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .sidebar-dropdown-menu button{
+    background-color: rgba(255, 255, 255, 0.278);
+    width: 100%;
+    text-align: left;
+  }
+  
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(255, 255, 255, 0.3);
+}
+  .products-dropdown-menu li {
+    list-style-type: none;
+    padding-block: 1rem;
+    
+  }
+  .sidebar-dropdown-menu a ,button{
+    text-decoration: none;
+    color: #16487c;
+  }
+  
+  .sidebar-dropdown-menu ul li {
+    list-style-type: none;
+    text-decoration: none;
+    transform: scale(1);
+    line-height: 30px;
+    transition: transform 0.2s linear;
+    font-size: 14px;
+    /* border-bottom: 1px solid rgb(0, 0, 0); */
+  }
+  
+  .sidebar-dropdown-menu.visible {
+    display: block;
+  }
+  
+  .sub li:hover {
+    transform: scale(1.1)
+    /* color: rgba(0, 0, 0, 0.532); */
+  }
+  .sub a{
+    color: black;
+    margin-inline-start: -20x
+
+  }
+
+  @media screen and (max-width:991px) {
+    .sidebar-dropdown-menu {
+       display: none;
+    }
+    .sidebar-dropdown-menu {
+      position:absolute;
+      top: 65%;
+
+  }
+    
+  }
+  /* @media screen and (max-height:850px) {
+    .sidebar-dropdown-menu {
+      position:absolute;
+      top: 55%;
+ 
+
+  }
+} */
+
+  @media screen and (max-height:700px) {
+    .sidebar-dropdown-menu {
+      position:absolute;
+      top: 35%;
+
+
+  }
+}

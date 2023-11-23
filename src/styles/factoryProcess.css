@@ -1,0 +1,30 @@
+
+.factoryProcess img{
+    height: 1000px;
+    width: 100%;
+}
+@media screen and (max-width:1200px){
+    .factoryProcess img{
+        height: 650px;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:991px){
+
+    .factoryProcess img{
+        height: 500px;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:500px){
+
+    .factoryProcess img{
+        height: 300px;
+        width: 100%;
+    }
+
+}

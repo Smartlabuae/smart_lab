@@ -1,0 +1,48 @@
+.accordion{
+    width: 750px!important;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+    text-align: start;
+}
+.accordion-full  button:hover{
+    color: rgb(255, 255, 255);
+}
+
+
+.accordion-full{
+    background-color: rgba(255, 255, 255, 0);
+}
+.accordion-full p{
+    width: 750px;
+    padding-inline: 30px;
+    padding-block: 8px;
+    color: rgb(2,68,142);
+}
+.accordion-full button p:hover{
+    padding-inline: 30px;
+    padding-block: 8px;
+    color: rgb(0, 99, 156);
+}
+
+@media screen and (max-width:786px) {
+    .accordion{
+        width: 250px!important;
+        height: 50px;
+        background-color: rgba(255, 255, 255, 0)!important;
+        display: flex;
+        flex-direction: column;
+       align-items: center;
+        text-align: start;    
+    }
+    .accordion-full button{
+        background-color: rgba(240, 248, 255, 0);
+    }
+    .accordion-full p{
+        width: 270px;
+    }
+    
+}
+

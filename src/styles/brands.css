@@ -1,0 +1,82 @@
+.brands-heading{
+    position:absolute;
+    top:20%;
+    left: 5%;
+    width: 500px;
+    z-index: 100;
+  }
+  .brands-heading h2{
+    font-weight: 800;
+  }
+  .about-img {
+    position: relative;
+    overflow-x: hidden;
+    width: 100%;
+  
+  
+    
+    
+
+  }
+  .color-overlay {
+    height: 300px;
+  
+  }
+
+  
+  .scrolling-brands {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    white-space: nowrap;
+    font-size: 100px;
+    display: flex;
+    justify-content:space-between;
+    overflow: hidden !important;
+    gap: 0;
+  }
+  .scrolling-brands:hover .scrolling-bimg{
+    animation-play-state:paused ;
+  }
+  .scrolling-bimg{
+    display: inline-block;
+  animation: scrollbrands 20s linear infinite; 
+  }
+  
+  
+  .scrolling-bimg img {
+    width: 150px;
+    height: 100px;
+    object-fit: contain;
+    margin-left:80px ;
+    transition:transform 0.1s;
+  }
+
+  
+  
+  
+  
+  
+  @keyframes scrollbrands {
+    from{
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-100%); 
+    }
+    
+    
+  }
+  /* @media screen and (max-width:991px) {
+    .scrolling-brands{
+      width: 380%;
+    }
+    
+  }
+  
+  @media screen and (max-width:768px){
+    .scrolling-brands{
+      width: 520%;
+    }
+  }
+   */
