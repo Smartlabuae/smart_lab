@@ -30,10 +30,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "cross-env CI=false react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "custom-script": "cross-env CI=false react-scripts custom-script"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
