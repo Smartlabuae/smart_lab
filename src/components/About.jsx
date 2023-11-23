@@ -41,7 +41,7 @@ const About = () => {
     return () => {
       clearInterval(imageRotationInterval);
     };
-  }, [currentImageIndex]);
+  }, );
 
   return (
     <div className="about mt-1">
