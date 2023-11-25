@@ -176,7 +176,7 @@ width: 50%;
 }
 .laminar p{
     color: black;
-    font: 20px;
+    font-size: 20px;
 }
 
 @media screen and  (max-width:991px){
